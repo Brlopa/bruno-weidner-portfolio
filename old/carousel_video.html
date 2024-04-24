@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .video {
+            width: 100%;
+            flex: 0 0 auto;
+        }
+
+        #video1:checked ~ .carousel {
+            transform: translateX(0%);
+        }
+
+        #video2:checked ~ .carousel {
+            transform: translateX(-100%);
+        }
+
+        #video3:checked ~ .carousel {
+            transform: translateX(-200%);
+        }
+
+        .carousel input {
+            display: none;
+        }
+
+        .carousel label {
+            display: inline-block;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            background-color: #ddd;
+            margin: 0 5px;
+        }
+
+        .carousel label:hover {
+            background-color: #aaa;
+        }
+
+        #video1:checked ~ .carousel label[for="video1"],
+        #video2:checked ~ .carousel label[for="video2"],
+        #video3:checked ~ .carousel label[for="video3"] {
+            background-color: #555;
+        }
+    </style>
+    <title>Video Carousel Example</title>
+</head>
+<body>
+
+    <div class="carousel-container">
+        <input type="radio" id="video1" name="video" checked>
+        <input type="radio" id="video2" name="video">
+        <input type="radio" id="video3" name="video">
+        <div class="carousel">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=PLljG5QBFYc" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=AOAIoPxqlSE&t=4s" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://youtu.be/pIv_1xt8fX4?si=Psh0Fyov6_U1LoDZ" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="carousel-navigation">
+            <label for="video1"></label>
+            <label for="video2"></label>
+            <label for="video3"></label>
+        </div>
+    </div>
+
+</body>
+</html>

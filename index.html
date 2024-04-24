@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.typekit.net/cqr5xrc.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: anago, sans-serif; font-weight: 800;
+            background-color: #000; 
+            color: #fff;
+        }
+        h1{
+            font-family: anago, sans-serif; font-weight: 800; font-style: normal;
+        }
+        h2{
+            font-family: anago, sans-serif; font-weight: 700; font-style: normal;
+        }
+        h3{
+            font-family: anago, sans-serif; font-weight: 500; font-style: normal;
+        }
+        p{
+            font-family: anago, sans-serif; font-weight: 200; font-style: normal;
+        }
+
+        nav {
+            background-color: #00000000;
+            padding: 3px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 5;
+            padding: 0;
+            display: flex;
+            justify-content: left;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+        }
+        
+        header {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            padding: 0px;
+            padding-left: 0px;
+            text-align: left;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        } */
+
+        header.scrolled {
+            background-color: #0f44a5;
+        }
+
+        .container {
+            max-width: 100%;
+            padding: 10px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                max-width: 600px;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .container {
+                max-width: 900px;
+            }
+        }
+
+    </style>
+    <title>Bruno Weidner Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#Kontakt">Kontakt</a></li>
+                    <li><a href="#Lebenslauf">Lebenslauf</a></li>
+                    <li><a href="#Meine Projekte">Meine Projekte</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Bruno Weidner</h1>
+        <section id="About Me">
+            <h2>
+                About Me
+            </h2>
+            <p>
+            Hallo. Mein Name ist Bruno Weidner und ich bin leidenschaftlicher Hobby-Fotograf und Videograf aus Ipsach bei Biel. <br>
+            Seit ich meine Kamera vor manchen Jahren geschenkt bekommen habe mache ich immer wieder einmal kleine Videoprojekte.
+            Meistens ohne genaues Storyboard nehme ich das auf, was um mich herum geschieht. <br> Die Fotografie ergänzt meine Leidenschaft 
+            für die Kamera. 
+            </p>
+        </section>
+        <script src="script.js"></script>
+        <div class="row">
+            <img src="bruno_coffee.JPG" height="240" widht="320">
+            <img src="bruno_lisbon.JPG" height="240" widht="320">
+            <img src="bruno_sunshades.JPG" height="240" widht="320">
+            <!--<img src="bruno_tourist.jpg" height="240" widht="320"> -->
+        </div>
+        <section id="Kontakt">
+            <h2>
+                Kontakt
+            </h2>
+            <p>
+                Mail: <a href="mailto:brunoweidner@bluewin.ch">brunoweidner@bluewin.ch</a>
+                <br>
+                Insta: <a href="https://www.instagram.com/bruno_w_04/" target=”_blank” >@bruno_w_04</a>
+            </p>
+        </section>
+        <!--<section id="Lebenslauf">
+            <h2>
+                Lebenslauf
+            </h2>
+            <p>
+                <a href="Lebenslauf_Bruno_Weidner.pdf" target="_blank">Download</a>
+            </p>
+        </section>
+    -->
+        <section id="Meine Projekte">
+            <h2>
+                Work
+            </h2>
+            <p>
+                Ein paar ausgewählte Film- und Fotoprojekte.
+            </p>
+            <!-- <h3>
+                FlatFiveSix @JazzDaysLigerz
+            </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bTIIcxqmi0o?si=cI64cFA5lnh9IUzS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3> -->
+            <h3>
+                A Week in Berlin
+            </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aXbWKgAx-Nc?si=KS5NccPUSY1cNk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+            <h3>
+                Trailer Maturaarbeit: Ein Leben in der DDR
+            </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OoZSfFKkmEs?si=iDEnWkBxxQYn6BLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>
+                A Weekend in Turin
+            </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xlGbz2romLM?si=jf5OiuheJfmK3qTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <footer>
+            <p>
+            © 2024 Bruno Weidner. All Rights Reserved
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+    
+</body>
+</html>
